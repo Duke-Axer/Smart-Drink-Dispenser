@@ -1,0 +1,124 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Strona-1" id="EeGMPZEemAnXUMa_uqr3">
+    <mxGraphModel dx="1195" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-1" target="EodmsSP7AVaqMcXHRe4B-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-9" value="NIE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-7">
+          <mxGeometry x="-0.7845" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-5" target="EodmsSP7AVaqMcXHRe4B-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-13" value="TAK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-12">
+          <mxGeometry x="-0.6986" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-5" value="Czy użytkownik wcisną przycisk nalewania" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="330" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-31" value="NIE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-16">
+          <mxGeometry x="-0.7304" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-14" target="EodmsSP7AVaqMcXHRe4B-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="725" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-40" value="TAK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-39">
+          <mxGeometry x="-0.8182" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-14" value="Czy w pozycji X waga wskazuje ~100 g" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="610" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-17" value="Wlej do szklanki napój z pompki &quot;1&quot;&amp;nbsp;&lt;div&gt;i&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;napój z pompki &quot;2&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(otwórz elektrozawory)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="770" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-20" target="EodmsSP7AVaqMcXHRe4B-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-20" value="Odczytaj przepis na napój" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="460" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="1050" />
+              <mxPoint x="130" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-25" value="Ustaw pozycję serwomechanizmu na następną" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="990" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-26" target="EodmsSP7AVaqMcXHRe4B-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-26" value="Ustaw pozycję serwomechanizmu na domyślną" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="160" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-32" target="EodmsSP7AVaqMcXHRe4B-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-36" value="NIE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-33">
+          <mxGeometry x="-0.6559" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EodmsSP7AVaqMcXHRe4B-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="955" />
+              <mxPoint x="820" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-38" value="TAK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EodmsSP7AVaqMcXHRe4B-37">
+          <mxGeometry x="-0.9727" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EodmsSP7AVaqMcXHRe4B-32" value="Czy serwomechanizm jest na pozycji końcowej" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="880" width="220" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

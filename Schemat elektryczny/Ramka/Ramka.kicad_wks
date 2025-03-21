@@ -1,0 +1,158 @@
+(kicad_wks
+	(version 20231118)
+	(generator "pl_editor")
+	(generator_version "9.0")
+	(setup
+		(textsize 1.5 1.5)
+		(linewidth 0.15)
+		(textlinewidth 0.15)
+		(left_margin 10)
+		(right_margin 10)
+		(top_margin 10)
+		(bottom_margin 10)
+	)
+	(rect
+		(name "")
+		(start 110 31.4602)
+		(end 2.094 1.9222)
+		(comment "rect around the title block")
+	)
+	(rect
+		(name "")
+		(start 0 0 ltcorner)
+		(end 0 0)
+		(repeat 2)
+		(incrx 2)
+		(incry 2)
+	)
+	(line
+		(name "")
+		(start 50 2 ltcorner)
+		(end 50 0 ltcorner)
+		(repeat 30)
+		(incrx 50)
+	)
+	(tbtext "1"
+		(name "")
+		(pos 25 1 ltcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(repeat 100)
+		(incrx 50)
+	)
+	(line
+		(name "")
+		(start 50 2 lbcorner)
+		(end 50 0 lbcorner)
+		(repeat 30)
+		(incrx 50)
+	)
+	(tbtext "1"
+		(name "")
+		(pos 25 1 lbcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(repeat 100)
+		(incrx 50)
+	)
+	(line
+		(name "")
+		(start 0 50 ltcorner)
+		(end 2 50 ltcorner)
+		(repeat 30)
+		(incry 50)
+	)
+	(tbtext "A"
+		(name "")
+		(pos 1 25 ltcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(justify center)
+		(repeat 100)
+		(incry 50)
+	)
+	(line
+		(name "")
+		(start 0 50 rtcorner)
+		(end 2 50 rtcorner)
+		(repeat 30)
+		(incry 50)
+	)
+	(tbtext "A"
+		(name "")
+		(pos 1 25 rtcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(justify center)
+		(repeat 100)
+		(incry 50)
+	)
+	(tbtext "Date: ${ISSUE_DATE}"
+		(name "")
+		(pos 87 4.3602)
+	)
+	(line
+		(name "")
+		(start 110 5.9602)
+		(end 2 5.9602)
+	)
+	(tbtext "Size: ${PAPER}"
+		(name "")
+		(pos 109 4.3602)
+		(comment "Paper format name")
+	)
+	(line
+		(name "")
+		(start 110 9.9602)
+		(end 2 9.9602)
+	)
+	(tbtext "Title: ${TITLE}"
+		(name "")
+		(pos 109 8.1602)
+		(font
+			(size 2 2) bold italic)
+	)
+	(line
+		(name "")
+		(start 110 15.9602)
+		(end 2 15.9602)
+	)
+	(tbtext "Przedmiot:	${COMMENT4}"
+		(name "")
+		(pos 109 14.46)
+	)
+	(tbtext "${COMPANY}"
+		(name "")
+		(pos 109 27.6202)
+		(font bold)
+		(comment "Company name")
+	)
+	(tbtext "${COMMENT1}"
+		(name "")
+		(pos 109 17.9202)
+		(comment "Comment 0")
+	)
+	(tbtext "${COMMENT2}"
+		(name "")
+		(pos 109 20.9202)
+		(comment "Comment 1")
+	)
+	(tbtext "${COMMENT3}"
+		(name "")
+		(pos 109 23.9202)
+		(comment "Comment 2")
+	)
+	(line
+		(name "")
+		(start 90 5.9602)
+		(end 90 2.9602)
+	)
+	(tbtext "Prowadzący:	${COMMENT5}"
+		(name "")
+		(pos 109 11.938)
+	)
+)
