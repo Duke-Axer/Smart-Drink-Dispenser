@@ -16,9 +16,10 @@
 #define empty_glass 200.0
 #define full_glass 450.0
 
-HX711 scale1(dataOUT1, CLK); // obiekt od przetwornika nr 1
-HX711 scale2(dataOUT2, CLK); // obiekt od przetwornika nr 2
-HX711 scale3(dataOUT3, CLK); // obiekt od przetwornika nr 3
+
+HX711 scale1;  // obiekt od przetwornika nr 1
+HX711 scale2;  // obiekt od przetwornika nr 2
+HX711 scale3;  // obiekt od przetwornika nr 3
 
 
 /**
@@ -27,32 +28,31 @@ HX711 scale3(dataOUT3, CLK); // obiekt od przetwornika nr 3
  * Umożliwia sprawdzenie wagi, ruch serwomechanizmu i włączenie pomp.
  */
 class Glass {
-  private:
-  float amount_1 = 50.0; // Ilość cieczy nr 1
-  float amount_2 = 50.0; // Ilość cieczy nr 2
-  float weight_empty_glass_and_amount_1;
-  int position_glass; // Pozycja szklanki
-  int position_servo; // Pozycja serwomechanizmu
-
   public:
+  static float amount_1; // Ilość cieczy nr 1
+  static float amount_2; // Ilość cieczy nr 2
+  static float weight_empty_glass_and_amount_1;
+  int position_glass; // Pozycja szklanki
+  static int position_servo; // Pozycja serwomechanizmu
+
   Glass(int pos) {
-    position = pos;
+    Glass::position_glass = pos;
   }
  /**
- * @brief Funkcja obsługuje działanie pomp
+ * @brief Funkcja obsługuje działaniem pomp.
  */
   static void pour () {
     while (true) {
-      if (returnWeight() < empty_glass + amount_1) {
+      if (returnWeight() < empty_glass + Glass::amount_1) {
         digitalWrite(pumpPin1, HIGH);
       } else {
         digitalWrite(pumpPin1, LOW);
-        weight_empty_glass_and_amount_1 = returnWeight();
+        Glass::weight_empty_glass_and_amount_1 = returnWeight();
         break;
       }
     }
     while (true) {
-      if (returnWeight() < weight_empty_glass_and_amount_1) {
+      if (returnWeight() < Glass::weight_empty_glass_and_amount_1 + Glass::amount_2) {
         digitalWrite(pumpPin2, HIGH);
       } else {
         digitalWrite(pumpPin2, LOW);
@@ -67,7 +67,7 @@ class Glass {
   * 
   */
   static float returnWeight() {
-    switch(position_servo) {
+    switch(Glass::position_servo) {
       case 1:
       return scale1.get_units();
       case 2:
@@ -80,12 +80,12 @@ class Glass {
   /**
   * @brief Funkcja obsługująca sterowaniem serwomechanizmu.
   * 
-  * Serwomechanizm ustawia następną pozycję. Po ostatniej pozycji wraca do domyslnej.
+  * Serwomechanizm ustawia pozycję szklanki. Po ostatniej pozycji wraca do domyslnej.
   *
   * @param default_position Serwomechanizm wraca do domyślnej pozycji.
   * @return Jeśli serwomechanizm znajduje się na domyślnej pozycji zwraca TRUE, w przeciwnym razie zwraca FALSE.
   */
-  bool moveServomechanism(bool default_position = false) {
+  static bool moveServomechanism(bool default_position = false) {
     if (default_position) {
 
     } else {
@@ -95,15 +95,25 @@ class Glass {
   static void default_position() {
     digitalWrite(pumpPin1, LOW);
     digitalWrite(pumpPin2, LOW);
-    moveServomechanism(true)
+    moveServomechanism(true);
   }
-}
+  static bool change_recipt(float amount_1, float amount_2) {
+    Glass::amount_1 = amount_1;
+    Glass::amount_2 = amount_2;
+    return true;
+  }
+};
+float Glass::amount_1 = 0.0f;
+float Glass::amount_2 = 0.0f;
 
 void setup() {
   pinMode(pumpPin1, OUTPUT);
   pinMode(pumpPin2, OUTPUT);
   digitalWrite(pumpPin1, LOW);
   digitalWrite(pumpPin2, LOW);
+  scale1.begin(dataOUT1, CLK); // przetwornik nr 1
+  scale2.begin(dataOUT2, CLK); // przetwornik nr 2
+  scale3.begin(dataOUT3, CLK); // przetwornik nr 3
   Serial.begin(9600);
   Serial.println("Start programu");
   scale1.set_scale(calibration_factor1);  // Ustawienie kalibracji dla 1
@@ -116,6 +126,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Glass::change_recipt(50.0f, 60.0f);
 
 }
