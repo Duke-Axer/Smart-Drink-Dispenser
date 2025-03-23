@@ -1,46 +1,49 @@
 #include "HX711.h"
 #include <ESP32Servo.h>
 
-#define pumpPin1 13   // pin do sterowania pompą nr 1
-#define pumpPin2 14   // pin do sterowania pompą nr 2
+#define pumpPin1 13   ///< pin do sterowania pompą nr 1
+#define pumpPin2 14   ///< pin do sterowania pompą nr 2
 
-#define CLK 22        // pin od zegara
-#define dataOUT1 27   // Dane z przetwornika nr 1
-#define dataOUT2 26   // Dane z przetwornika nr 2
-#define dataOUT3 25   // Dane z przetwornika nr 3
-#define servoPin 33      // Pin do serwomechanizmu
+#define CLK 22        ///< pin od zegara
+#define dataOUT1 27   ///< Dane z przetwornika nr 1
+#define dataOUT2 26   ///< Dane z przetwornika nr 2
+#define dataOUT3 25   ///< Dane z przetwornika nr 3
+#define servoPin 33   ///< Pin do serwomechanizmu
 
-#define calibration_factor1 -3350.0 // współczynnik kalibracji dla przetwornika nr 1
-#define calibration_factor2 -3350.0 // współczynnik kalibracji dla przetwornika nr 2
-#define calibration_factor3 -3350.0 // współczynnik kalibracji dla przetwornika nr 3
+#define calibration_factor1 -3350.0 ///< współczynnik kalibracji dla przetwornika nr 1
+#define calibration_factor2 -3350.0 ///< współczynnik kalibracji dla przetwornika nr 2
+#define calibration_factor3 -3350.0 ///< współczynnik kalibracji dla przetwornika nr 3
 
 #define empty_glass 200.0
 #define full_glass 450.0
 
 
-HX711 scale1; // obiekt od przetwornika nr 1
-HX711 scale2; // obiekt od przetwornika nr 2
-HX711 scale3; // obiekt od przetwornika nr 3
-Servo servo;  // obiekt od serwomechanizmu
+HX711 scale1; ///< obiekt od przetwornika nr 1
+HX711 scale2; ///< obiekt od przetwornika nr 2
+HX711 scale3; ///< obiekt od przetwornika nr 3
+Servo servo;  ///< obiekt od serwomechanizmu
 
 /**
- * @brief Klasa obsługująca moduły nalewające ciecz.
+ * @class Glass
+ * @brief Klasa obsługująca moduły odpowiedzialne za nalewanie napojów do szklanek.
  * 
  * Umożliwia sprawdzenie wagi, ruch serwomechanizmu i włączenie pomp.
  */
 class Glass {
   public:
-  static float amount_1; // Ilość cieczy nr 1
-  static float amount_2; // Ilość cieczy nr 2
-  int position_glass; // Pozycja szklanki
-  static int position_servo; // Pozycja serwomechanizmu
+  static float amount_1; ///< Porcja napoju nr 1
+  static float amount_2; ///< Porcja napoju nr 2
+  int position_glass; ///< Pozycja szklanki
+  static int position_servo; ///< Pozycja serwomechanizmu
 
   Glass(int pos) {
     this->position_glass = pos;
   }
 
  /**
- * @brief Funkcja obsługuje działaniem pomp, nalewa do jednej szklanki.
+ * @brief Główna funkcja odpowiedzialna za nalewanie do szklanek.
+ * 
+ * Ustawia servo i nalewa odpowiednią porcję obu napojów do szklanki.
  */
   void pour () {
     moveServomechanism();
@@ -72,7 +75,9 @@ class Glass {
   }
 
   /**
-  * @brief Funkcja obsługująca zwracanie wartości wagi.
+  * @brief Sprawdza wagę na pozycji, na której jest teraz servomechanizm.
+  *
+  * @return Wartość float.
   */
   static float returnWeight() {
     switch(Glass::position_servo) {
@@ -90,9 +95,9 @@ class Glass {
   /**
   * @brief Funkcja obsługująca sterowaniem serwomechanizmu.
   * 
-  * Serwomechanizm ustawia pozycję szklanki. Po ostatniej pozycji wraca do domyslnej.
+  * Serwomechanizm ustawia się na pozycji, na której jest szklanka. Po ostatniej pozycji wraca do domyslnej.
   *
-  * @param default_position Serwomechanizm wraca do domyślnej pozycji.
+  * @param default_position Czy serwomechanizm ma wrócić do pozycji domyślnej.
   * @return Jeśli serwomechanizm znajduje się na domyślnej pozycji zwraca TRUE, w przeciwnym razie zwraca FALSE.
   */
   bool moveServomechanism(bool default_position = false) {
@@ -116,19 +121,19 @@ class Glass {
   }
 
   /**
-  * @brief Funkcja ustawia hardware do pozycji domyślnej.
+  * @brief Funkcja ustawia serwomechanizm i pompy do pozycji domyślnej.
   */
-  void default_position() {
+  void defaultPosition() {
     digitalWrite(pumpPin1, LOW);
     digitalWrite(pumpPin2, LOW);
     moveServomechanism(true);
   }
   
   /**
-  * @brief Zmiana przepisu.
+  * @brief Modyfikuje przepis.
   *
-  * @param amount_1 Ustawia ilość pierwszej cieczy.
-  * @param amount_2 Ustawia ilość drugiej cieczy.
+  * @param amount_1 Porcja pierwszego napoju w przepisie.
+  * @param amount_2 Porcja drugiego napoju w przepisie.
   */
   static bool change_recipt(float amount_1, float amount_2) {
     Glass::amount_1 = amount_1;
@@ -145,18 +150,18 @@ void setup() {
   pinMode(pumpPin2, OUTPUT);
   digitalWrite(pumpPin1, LOW);
   digitalWrite(pumpPin2, LOW);
-  scale1.begin(dataOUT1, CLK); // przetwornik nr 1
-  scale2.begin(dataOUT2, CLK); // przetwornik nr 2
-  scale3.begin(dataOUT3, CLK); // przetwornik nr 3
+  scale1.begin(dataOUT1, CLK); ///< przetwornik nr 1
+  scale2.begin(dataOUT2, CLK); ///< przetwornik nr 2
+  scale3.begin(dataOUT3, CLK); ///< przetwornik nr 3
   servo.attach(servoPin);
   Serial.begin(9600);
   Serial.println("Start programu");
-  scale1.set_scale(calibration_factor1);  // Ustawienie kalibracji dla 1
-  scale2.set_scale(calibration_factor2);  // Ustawienie kalibracji dla 2
-  scale3.set_scale(calibration_factor3);  // Ustawienie kalibracji dla 3
-  scale1.tare();  // Tarowanie wagi nr 1
-  scale2.tare();  // Tarowanie wagi nr 2
-  scale3.tare();  // Tarowanie wagi nr 3
+  scale1.set_scale(calibration_factor1);  ///< Ustawienie kalibracji dla 1
+  scale2.set_scale(calibration_factor2);  ///< Ustawienie kalibracji dla 2
+  scale3.set_scale(calibration_factor3);  ///< Ustawienie kalibracji dla 3
+  scale1.tare();  ///< Tarowanie wagi nr 1
+  scale2.tare();  ///< Tarowanie wagi nr 2
+  scale3.tare();  ///< Tarowanie wagi nr 3
 
   Glass::change_recipt(50.0f, 60.0f);
   Glass glass1(1);  // obiekt szklana1
