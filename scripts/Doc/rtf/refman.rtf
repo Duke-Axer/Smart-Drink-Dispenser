@@ -1,0 +1,704 @@
+{\rtf1\ansi\ansicpg1250\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset238\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset238\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset238\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s6\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs12\cgrid \sbasedon0 \snext0 heading 6;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\*\listtable
+{\list\listtemplateid1
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8226 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u8662 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9702 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9642 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid1}
+{\list\listtemplateid2
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9744 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid2}
+{\list\listtemplateid3
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li360 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li720 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1080 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1440 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li1800 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2160 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2520 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li2880 }
+{ \listlevel\levelnfc23\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\u9746 ?;}{\levelnumbers;}\f8\dbch\af3\fi-360\li3600 }
+\listid3}
+}
+{\listoverridetable
+{\listoverride\listid1\listoverridecount0\ls1}
+{\listoverride\listid2\listoverridecount0\ls2}
+{\listoverride\listid3\listoverridecount0\ls3}
+}
+{\info 
+{\title {\comment Smart Drink Dispenser }Smart Drink Dispenser}
+{\comment Wygenerowano za pomoc\'B9 doxygen 1.13.2.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Smart Drink Dispenser}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Wersja \par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Spis tre\'9Cci\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indeks klas\par \pard\plain 
+{\tc \v Indeks klas}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista klas\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Tutaj znajduj\'B9 si\'EA klasy, struktury, unie i interfejsy wraz z ich kr\'F3tkimi opisami:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Glass} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Klasa obs\'B3uguj\'B9ca modu\'B3y odpowiedzialne za nalewanie napoj\'F3w do szklanek })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indeks plik\'F3w\par \pard\plain 
+{\tc \v Indeks plik\'F3w}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista plik\'F3w\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Tutaj znajduje si\'EA lista wszystkich udokumentowanych plik\'F3w wraz z ich kr\'F3tkimi opisami:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Nekran/Dokumenty/studia/Internet rzeczy/Smart Drink Dispenser/scripts/Smart_Drink_Dispenser/{\b Smart_Drink_Dispenser.ino} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Dokumentacja klas{\tc \v Dokumentacja klas}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Dokumentacja klasy Glass\par \pard\plain 
+{\tc\tcl2 \v Glass}
+{\xe \v Glass}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Klasa obs\'B3uguj\'B9ca modu\'B3y odpowiedzialne za nalewanie napoj\'F3w do szklanek. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Metody publiczne\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Glass} (int pos)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b pour} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+G\'B3\'F3wna funkcja odpowiedzialna za nalewanie do szklanek. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b moveServomechanism} (bool {\b default_position}=false)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja obs\'B3uguj\'B9ca sterowaniem serwomechanizmu. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b default_position} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja ustawia serwomechanizm i pompy do pozycji domy\'9Clnej. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Statyczne metody publiczne\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float {\b returnWeight} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sprawdza wag\'EA na pozycji, na kt\'F3rej jest teraz servomechanizm. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b change_recipt} (float {\b amount_1}, float {\b amount_2})\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Modyfikuje przepis. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atrybuty publiczne\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b position_glass}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pozycja szklanki. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Statyczne atrybuty publiczne\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float {\b amount_1} = 0.0f\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Porcja napoju nr 1. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float {\b amount_2} = 0.0f\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Porcja napoju nr 2. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static int {\b position_servo}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pozycja serwomechanizmu. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Opis szczeg\'F3\'B3owy\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Klasa obs\'B3uguj\'B9ca modu\'B3y odpowiedzialne za nalewanie napoj\'F3w do szklanek. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Umo\'BFliwia sprawdzenie wagi, ruch serwomechanizmu i w\'B3\'B9czenie pomp. \par
+}{
+Definicja w linii {\b 32} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja konstruktora i destruktora\par
+\pard\plain 
+{\xe \v Glass\:Glass}
+{\xe \v Glass\:Glass}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Glass::Glass (int pos){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definicja w linii {\b 39} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja funkcji sk\'B3adowych\par
+\pard\plain 
+{\xe \v change_recipt\:Glass}
+{\xe \v Glass\:change_recipt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool Glass::change_recipt (float amount_1, float amount_2){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Modyfikuje przepis. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parametry\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i amount_1} \cell }{Porcja pierwszego napoju w przepisie. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i amount_2} \cell }{Porcja drugiego napoju w przepisie. \cell }
+{\row }
+}
+}{
+Definicja w linii {\b 138} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v default_position\:Glass}
+{\xe \v Glass\:default_position}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Glass::default_position (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja ustawia serwomechanizm i pompy do pozycji domy\'9Clnej. }}\par
+{
+Definicja w linii {\b 126} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v moveServomechanism\:Glass}
+{\xe \v Glass\:moveServomechanism}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Glass::moveServomechanism (bool default_position = {\f2 false}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja obs\'B3uguj\'B9ca sterowaniem serwomechanizmu. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Serwomechanizm ustawia si\'EA na pozycji, na kt\'F3rej jest szklanka. Po ostatniej pozycji wraca do domyslnej.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Parametry\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i default_position} \cell }{Czy serwomechanizm ma wr\'F3ci\'E6 do pozycji domy\'9Clnej. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Zwraca\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Je\'9Cli serwomechanizm znajduje si\'EA na domy\'9Clnej pozycji zwraca TRUE, w przeciwnym razie zwraca FALSE. \par
+}}}{
+Definicja w linii {\b 103} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v pour\:Glass}
+{\xe \v Glass\:pour}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Glass::pour (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+G\'B3\'F3wna funkcja odpowiedzialna za nalewanie do szklanek. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ustawia servo i nalewa odpowiedni\'B9 porcj\'EA obu napoj\'F3w do szklanki. \par
+}{
+Definicja w linii {\b 48} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v returnWeight\:Glass}
+{\xe \v Glass\:returnWeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float Glass::returnWeight (){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sprawdza wag\'EA na pozycji, na kt\'F3rej jest teraz servomechanizm. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs16\cgrid 
+Zwraca\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Warto\'9C\'E6 float. \par
+}}}{
+Definicja w linii {\b 82} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja atrybut\'F3w sk\'B3adowych\par
+\pard\plain 
+{\xe \v amount_1\:Glass}
+{\xe \v Glass\:amount_1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Glass::amount_1 = 0.0f{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Porcja napoju nr 1. }}\par
+{
+Definicja w linii {\b 34} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v amount_2\:Glass}
+{\xe \v Glass\:amount_2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float Glass::amount_2 = 0.0f{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Porcja napoju nr 2. }}\par
+{
+Definicja w linii {\b 35} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v position_glass\:Glass}
+{\xe \v Glass\:position_glass}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Glass::position_glass}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pozycja szklanki. }}\par
+{
+Definicja w linii {\b 36} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\xe \v position_servo\:Glass}
+{\xe \v Glass\:position_servo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Glass::position_servo{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pozycja serwomechanizmu. }}\par
+{
+Definicja w linii {\b 37} pliku {\b Smart_Drink_Dispenser.ino}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Dokumentacja dla tej klasy zosta\'B3a wygenerowana z pliku:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Nekran/Dokumenty/studia/Internet rzeczy/Smart Drink Dispenser/scripts/Smart_Drink_Dispenser/Smart_Drink_Dispenser.ino\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Dokumentacja plik\'F3w{\tc \v Dokumentacja plik\'F3w}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Smart_Drink_Dispenser.ino\par \pard\plain 
+{\tc\tcl2 \v C:/Nekran/Dokumenty/studia/Internet rzeczy/Smart Drink Dispenser/scripts/Smart_Drink_Dispenser/Smart_Drink_Dispenser.ino}
+{\xe \v C:/Nekran/Dokumenty/studia/Internet rzeczy/Smart Drink Dispenser/scripts/Smart_Drink_Dispenser/Smart_Drink_Dispenser.ino}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf21 #include "HX711.h"}\par
+00002 {\cf21 #include <ESP32Servo.h>}\par
+00003 \par
+00004 {\cf21 #define pumpPin1 13   }\par
+00005 {\cf21 #define pumpPin2 14   }\par
+00006 \par
+00007 {\cf21 #define CLK 22        }\par
+00008 {\cf21 #define dataOUT1 27   }\par
+00009 {\cf21 #define dataOUT2 26   }\par
+00010 {\cf21 #define dataOUT3 25   }\par
+00011 {\cf21 #define servoPin 33   }\par
+00012 \par
+00013 {\cf21 #define calibration_factor1 -3350.0 }\par
+00014 {\cf21 #define calibration_factor2 -3350.0 }\par
+00015 {\cf21 #define calibration_factor3 -3350.0 }\par
+00016 \par
+00017 {\cf21 #define empty_glass 200.0}\par
+00018 {\cf21 #define full_glass 450.0}\par
+00019 \par
+00020 \par
+00021 HX711 scale1; \par
+00022 HX711 scale2; \par
+00023 HX711 scale3; \par
+00024 Servo servo;  \par
+00025 \par
+00032 {\cf17 class }Glass \{\par
+00033   {\cf17 public}:\par
+00034   {\cf17 static} {\cf18 float} amount_1; \par
+00035   {\cf17 static} {\cf18 float} amount_2; \par
+00036   {\cf18 int} position_glass; \par
+00037   {\cf17 static} {\cf18 int} position_servo; \par
+00038 \par
+00039   Glass({\cf18 int} pos) \{\par
+00040     this->position_glass = pos;\par
+00041   \}\par
+00042 \par
+00048   {\cf18 void} pour () \{\par
+00049     moveServomechanism();\par
+00050     {\cf18 float} weight = returnWeight();\par
+00051     {\cf18 float} weight_empty_glass_and_amount_1;\par
+00052     {\cf19 if} (weight < empty_glass -0) \{\par
+00053       {\cf20 // brak szklanki}\par
+00054       {\cf19 return};\par
+00055     \}\par
+00056     {\cf19 while} ({\cf17 true}) \{\par
+00057       weight = returnWeight();\par
+00058       {\cf19 if} (weight < empty_glass + Glass::amount_1) \{\par
+00059         digitalWrite(pumpPin1, HIGH);\par
+00060       \} {\cf19 else} \{\par
+00061         digitalWrite(pumpPin1, LOW);\par
+00062         weight_empty_glass_and_amount_1 = weight;\par
+00063         {\cf19 break};\par
+00064       \}\par
+00065     \}\par
+00066     {\cf19 while} ({\cf17 true}) \{\par
+00067       weight = returnWeight();\par
+00068       {\cf19 if} (weight < weight_empty_glass_and_amount_1 + Glass::amount_2) \{\par
+00069         digitalWrite(pumpPin2, HIGH);\par
+00070       \} {\cf19 else} \{\par
+00071         digitalWrite(pumpPin2, LOW);\par
+00072         {\cf19 break};\par
+00073       \}\par
+00074     \}\par
+00075   \}\par
+00076 \par
+00082   {\cf17 static} {\cf18 float} returnWeight() \{\par
+00083     {\cf19 switch}(Glass::position_servo) \{\par
+00084       {\cf19 case} 0:\par
+00085       {\cf19 return} -1.f;\par
+00086       {\cf19 case} 1:\par
+00087       {\cf19 return} scale1.get_units();\par
+00088       {\cf19 case} 2:\par
+00089       {\cf19 return} scale2.get_units();\par
+00090       {\cf19 case} 3:\par
+00091       {\cf19 return} scale3.get_units();\par
+00092     \}\par
+00093   \}\par
+00094 \par
+00103   {\cf18 bool} moveServomechanism({\cf18 bool} default_position = {\cf17 false}) \{\par
+00104     {\cf19 if} (default_position) \{\par
+00105       servo.write(0);\par
+00106       Glass::position_servo = 0;\par
+00107       {\cf19 return} {\cf17 true};\par
+00108 \par
+00109     \} {\cf19 else} {\cf19 if} (this->position_glass == 1) \{\par
+00110       servo.write(45);\par
+00111 \par
+00112     \} {\cf19 else} {\cf19 if} (this->position_glass == 2) \{\par
+00113       servo.write(90);\par
+00114 \par
+00115     \} {\cf19 else} {\cf19 if} (this->position_glass == 3) \{\par
+00116       servo.write(135);\par
+00117 \par
+00118     \}\par
+00119     Glass::position_servo = this->position_glass;\par
+00120     {\cf19 return} {\cf17 false};\par
+00121   \}\par
+00122 \par
+00126   {\cf18 void} default_position() \{\par
+00127     digitalWrite(pumpPin1, LOW);\par
+00128     digitalWrite(pumpPin2, LOW);\par
+00129     moveServomechanism({\cf17 true});\par
+00130   \}\par
+00131   \par
+00138   {\cf17 static} {\cf18 bool} change_recipt({\cf18 float} amount_1, {\cf18 float} amount_2) \{\par
+00139     Glass::amount_1 = amount_1;\par
+00140     Glass::amount_2 = amount_2;\par
+00141     {\cf19 return} {\cf17 true};\par
+00142   \}\par
+00143 \};\par
+00144 \par
+00145 {\cf18 float} Glass::amount_1 = 0.0f;\par
+00146 {\cf18 float} Glass::amount_2 = 0.0f;\par
+00147 \par
+00148 {\cf18 void} setup() \{\par
+00149   pinMode(pumpPin1, OUTPUT);\par
+00150   pinMode(pumpPin2, OUTPUT);\par
+00151   digitalWrite(pumpPin1, LOW);\par
+00152   digitalWrite(pumpPin2, LOW);\par
+00153   scale1.begin(dataOUT1, CLK); \par
+00154   scale2.begin(dataOUT2, CLK); \par
+00155   scale3.begin(dataOUT3, CLK); \par
+00156   servo.attach(servoPin);\par
+00157   Serial.begin(9600);\par
+00158   Serial.println({\cf22 "Start programu"});\par
+00159   scale1.set_scale(calibration_factor1);  \par
+00160   scale2.set_scale(calibration_factor2);  \par
+00161   scale3.set_scale(calibration_factor3);  \par
+00162   scale1.tare();  \par
+00163   scale2.tare();  \par
+00164   scale3.tare();  \par
+00165 \par
+00166   Glass::change_recipt(50.0f, 60.0f);\par
+00167   Glass glass1(1);  {\cf20 // obiekt szklana1}\par
+00168   Glass glass2(2);  {\cf20 // obiekt szklana2}\par
+00169   Glass glass3(3);  {\cf20 // obiekt szklana3}\par
+00170 \}\par
+00171 \par
+00172 {\cf18 void} loop() \{\par
+00173   \par
+00174 \par
+00175 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Indeks\par 
+\pard\plain 
+{\tc \v Indeks}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
