@@ -15,6 +15,130 @@
 		(comment 5 "Pani mgr inż. Aleksandra Wilczyńska")
 	)
 	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "HX711_1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2743,6 +2867,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 52.07) (xy 173.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b3c3201-f59e-43d7-927d-919b5efebbed")
+	)
+	(wire
+		(pts
 			(xy 123.19 154.94) (xy 130.81 154.94)
 		)
 		(stroke
@@ -3006,7 +3140,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 52.07) (xy 173.99 52.07)
+			(xy 144.78 52.07) (xy 152.4 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3016,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 41.91) (xy 109.22 41.91)
+			(xy 179.07 41.91) (xy 160.02 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3245,6 +3379,16 @@
 			(type default)
 		)
 		(uuid "d2b2a1a5-2c59-480a-9eef-7b13c4b6c8a3")
+	)
+	(wire
+		(pts
+			(xy 152.4 41.91) (xy 109.22 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4507c69-5747-4a41-80c7-359b1b805de4")
 	)
 	(wire
 		(pts
@@ -4198,6 +4342,142 @@
 			(project "Schemat elektryczny"
 				(path "/052f1a03-7e75-4cf9-8b84-3452573b392a"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c014b955-55e5-43c5-a875-3e32f7b0fb75")
+		(property "Reference" "R1"
+			(at 156.21 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 156.21 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 53.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "271e9dbd-2cc7-4395-ab2b-3aa914323bf7")
+		)
+		(pin "1"
+			(uuid "cebc3936-abaf-4030-bbc2-2cbbdc961d4e")
+		)
+		(instances
+			(project ""
+				(path "/052f1a03-7e75-4cf9-8b84-3452573b392a"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca3c1546-f047-48a1-b3e1-f2f7c7bae372")
+		(property "Reference" "R2"
+			(at 156.21 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 156.21 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 43.688 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbfa7864-4a31-45ce-8df4-c6fec83e2f19")
+		)
+		(pin "2"
+			(uuid "f0dee6b5-e128-44bb-b8c8-b3d26555f074")
+		)
+		(instances
+			(project ""
+				(path "/052f1a03-7e75-4cf9-8b84-3452573b392a"
+					(reference "R2")
 					(unit 1)
 				)
 			)
