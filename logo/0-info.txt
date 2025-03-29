@@ -1,0 +1,7 @@
+font: Bahnschrift
+colors:
+	glass: #3F7C9E
+	text: 
+		light mode: #000000 
+		dark mode: #ffffff
+dark mode background: #232323
